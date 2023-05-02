@@ -22,3 +22,18 @@
     font-family: "roboto-thin";
     src: url(../Assets/fonts/Roboto-Thin.woff2);
 }
+
+@font-face {
+    font-family: "Merriweather-regular";
+    src: url(../Assets/fonts/Merriweather/Merriweather-Regular.woff2);
+}
+
+@font-face {
+    font-family: "Merriweather-bold";
+    src: url(../Assets/fonts/Merriweather/Merriweather-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Merriweather-black";
+    src: url(../Assets/fonts/Merriweather/Merriweather-Black.woff2);
+}
