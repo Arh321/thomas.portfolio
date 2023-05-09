@@ -1,0 +1,282 @@
+@import url(fonts.css);
+@import url(root.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.meno_container{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.closebtn {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    top: 16px;
+    right: 12px;
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--icons-color);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.meno--list_container{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.meno--list--text1{
+    font-family: "roboto-medium";
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--projects-color);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.meno--list--rest{
+    font-family: "roboto-medium";
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--about-color);
+    padding-top: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.meno--list_container .meno--list--rest:hover{
+    color: var(--projects-color);
+}
+
+.meno--social_media{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 28px 0 40px 0;
+    gap: 32px;
+    border-top: 1px solid #EBEBEB ;
+}
+
+.social_media--icon{
+    color: var(--icons-color);
+    cursor: pointer;
+}
+
+.social_media--icon:hover{
+    color: var(--icons-hover-color);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_tab{
+    display: none;
+}
+
+.header_mobile{
+    width: 100%;
+    display: flex;
+    padding: 24px 20px;
+}
+
+.header--text{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "roboto-medium";
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--thomas-color);
+}
+
+.header--icon{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--icons-color);
+}
+
+.container--content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+}
+
+.headtext{
+    width: 100%;
+    font-family: 'Bitter', serif;
+    font-size: 3rem;
+}
+
+.contact{
+    width: 100%;
+    font-family: "roboto-regular";
+    font-size: 1.4rem;
+    padding: 36px 0 24px 0;
+    color: var(--body-text-color);
+}
+
+.contact_information--text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 0;
+}
+
+.contact--type{
+    font-family: "roboto-bold";
+    font-size: 1.4rem;
+    color: var(--body-text-color);
+}
+
+.contact--Adress{
+    font-family: "roboto-regular";
+    font-size: 1.4rem;
+    padding-left: 4px;
+    color: var(--body-text-color);
+}
+
+.--Adress{
+    color: var(--projects-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.--Adress:hover{
+    text-decoration: underline;
+}
+
+.Email_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.email--name_input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.label{
+    font-family: "roboto-bold";
+    font-size: 1.2rem;
+    color: var(--input-label);
+}
+
+.input{
+    width: 100%;
+    height: 36px;
+    border: 0.5px solid var(--foter-color);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding-left: 12px;
+    color: var(--projects-color);
+}
+
+::placeholder{
+    color: var(--about-color);
+    font-size: 1.2rem;
+}
+
+.email--name_input textarea{
+    width: 100%;
+    height: 150px;
+    padding-top: 12px;
+}
+
+textarea::placeholder{
+    color: var(--about-color);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Email_container--button{
+    background-color: var(--button-color);
+    width: 108px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+}
+
+.foter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 32px 0;
+}
+
+.foter--power{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "roboto-medium";
+    font-size: 1.3rem;
+    color: var(--foter-color);
+}
+
+.foter--Adob{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "roboto-medium";
+    font-size: 1.3rem;
+    color: var(--foter-color);  
+    text-decoration: none;  
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.foter .foter--Adob:hover{
+    text-decoration: underline;
+}
